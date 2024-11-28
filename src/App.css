@@ -1,275 +1,3 @@
-
-/** {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/*body {*/
-/*    background: linear-gradient(90deg, #155C6B 0%, #4EE4C1 85.17%);*/
-/*    font-family: "TT Hoves", sans-serif; !* Основен шрифт *!*/
-/*    margin: 0;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    height: 100vh;*/
-/*}*/
-
-/*.container-size {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*}*/
-
-/*.container {*/
-/*    width: 1170px;*/
-/*    height: 685px;*/
-/*    flex-shrink: 0;*/
-/*    border-radius: 36px;*/
-/*    background: #F8F8F8;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    padding: 32px;*/
-/*    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
-/*}*/
-
-/*.header {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    padding: 0 24px;*/
-/*    margin-bottom: 32px;*/
-/*}*/
-
-/*.logo {*/
-/*    width: 258px;*/
-/*    height: auto;*/
-/*    transform: rotate(-0.044deg);*/
-/*    flex-shrink: 0;*/
-/*}*/
-
-/*.social {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    gap: 26px;*/
-/*}*/
-
-/*.social img {*/
-/*    width: 24px;*/
-/*    height: 24px;*/
-/*    cursor: pointer;*/
-/*    transition: transform 0.3s ease;*/
-/*}*/
-
-/*.social img:hover {*/
-/*    transform: scale(1.1);*/
-/*}*/
-
-/*.content {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    flex: 1;*/
-/*}*/
-
-/*.announcement {*/
-/*    max-width: 50%;*/
-/*}*/
-
-/*.announcement h2 {*/
-/*    font-size: 24px;*/
-/*    color: #9D9D9D;*/
-/*    margin-bottom: 8px;*/
-/*    font-family: "TT Hoves", sans-serif;*/
-/*}*/
-
-/*.announcement h1 {*/
-/*    color: #2D2D2D; !* Основен цвят *!*/
-/*    font-family: "TT Hoves", sans-serif; !* Основен шрифт *!*/
-/*    font-size: 64px; !* Размер на шрифта *!*/
-/*    font-weight: 600; !* Тегло на шрифта *!*/
-/*    line-height: 85px; !* Височина на реда *!*/
-/*    margin-bottom: 24px;*/
-/*}*/
-
-/*.subscribe-form {*/
-/*    display: flex;*/
-/*    gap: 12px;*/
-/*}*/
-
-/*.subscribe-form input {*/
-/*    flex: 1;*/
-/*    padding: 12px 16px;*/
-/*    border: 1px solid #CCC;*/
-/*    border-radius: 8px;*/
-/*    font-size: 16px;*/
-/*    font-family: "TT Hoves", sans-serif;*/
-/*}*/
-
-/*.subscribe-form button {*/
-/*    padding: 12px 24px;*/
-/*    background: linear-gradient(90deg, #155C6B 0%, #4EE4C1 85%);*/
-/*    color: #FFF;*/
-/*    border: none;*/
-/*    border-radius: 8px;*/
-/*    font-size: 16px;*/
-/*    font-weight: 600;*/
-/*    font-family: "TT Hoves", sans-serif;*/
-/*    cursor: pointer;*/
-/*    transition: background 0.3s ease;*/
-/*}*/
-
-/*.subscribe-form button:hover {*/
-/*    background: linear-gradient(90deg, #0F484F 0%, #3CC0A6 85%);*/
-/*}*/
-
-/*.illustration {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    max-width: 50%;*/
-/*}*/
-
-/*.illustration img {*/
-/*    max-width: 100%;*/
-/*    height: auto;*/
-/*    object-fit: contain;*/
-/*}*/
-
-/*footer {*/
-/*    text-align: center;*/
-/*    font-size: 14px;*/
-/*    color: #9D9D9D;*/
-/*    margin-top: 16px;*/
-/*    font-family: "TT Hoves", sans-serif;*/
-/*}*/
-
-/*!* --- Media Queries --- *!*/
-/*@media (max-width: 1440px) {*/
-/*    .container {*/
-/*        width: 70%; !* Намаляване на ширината за лаптопи *!*/
-/*        height: auto;*/
-/*        padding: 24px;*/
-/*        border-radius: 30px; !* Малко по-малки закръгления *!*/
-/*    }*/
-
-/*    .announcement h1 {*/
-/*        font-size: 48px; !* Умерено намаляване на шрифта *!*/
-/*        line-height: 65px;*/
-/*    }*/
-
-/*    .announcement h2 {*/
-/*        font-size: 20px;*/
-/*    }*/
-
-/*    .subscribe-form input,*/
-/*    .subscribe-form button {*/
-/*        font-size: 14px; !* Намаляване на шрифта във формата *!*/
-/*    }*/
-
-/*    .logo {*/
-/*        width: 250px; !* Намаляване на логото за пропорционалност *!*/
-/*    }*/
-
-/*    .social img {*/
-/*        width: 20px; !* По-малки икони за социални мрежи *!*/
-/*        height: 20px;*/
-/*    }*/
-/*}*/
-/*!* За таблети (768px - 1024px) *!*/
-/*@media (max-width: 1024px) {*/
-/*    .container {*/
-/*        width: 90%;*/
-/*        height: auto;*/
-/*        padding: 24px;*/
-/*    }*/
-
-/*    .announcement h1 {*/
-/*        font-size: 48px;*/
-/*        line-height: 65px;*/
-/*    }*/
-
-/*    .announcement h2 {*/
-/*        font-size: 20px;*/
-/*    }*/
-
-/*    .subscribe-form input,*/
-/*    .subscribe-form button {*/
-/*        font-size: 14px;*/
-/*    }*/
-
-/*    .logo {*/
-/*        width: 200px;*/
-/*    }*/
-/*}*/
-
-/*!* За телефони (до 768px) *!*/
-/*@media (max-width: 768px) {*/
-/*    .container {*/
-/*        flex-direction: column;*/
-/*        width: 95%;*/
-/*        height: auto;*/
-/*        padding: 16px;*/
-/*    }*/
-
-/*    .header {*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*        margin-bottom: 16px;*/
-/*    }*/
-
-/*    .logo {*/
-/*        width: 180px;*/
-/*        margin-bottom: 16px;*/
-/*    }*/
-
-/*    .social {*/
-/*        gap: 16px;*/
-/*    }*/
-
-/*    .content {*/
-/*        flex-direction: column;*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    .announcement {*/
-/*        max-width: 100%;*/
-/*        margin-bottom: 24px;*/
-/*    }*/
-
-/*    .announcement h1 {*/
-/*        font-size: 36px;*/
-/*        line-height: 50px;*/
-/*    }*/
-
-/*    .announcement h2 {*/
-/*        font-size: 18px;*/
-/*    }*/
-
-/*    .subscribe-form {*/
-/*        flex-direction: column;*/
-/*        gap: 8px;*/
-/*    }*/
-
-/*    .subscribe-form input {*/
-/*        width: 100%;*/
-/*    }*/
-
-/*    .subscribe-form button {*/
-/*        width: 100%;*/
-/*    }*/
-
-/*    .illustration {*/
-/*        max-width: 100%;*/
-/*    }*/
-
-/*    footer {*/
-/*        font-size: 12px;*/
-/*    }*/
-/*}*/
-
 * {
   margin: 0;
   padding: 0;
@@ -363,6 +91,7 @@ body {
   font-size: 64px; /* Запазва пропорциите на заглавието */
   line-height: 85px; /* Балансира височината на редовете */
   margin-bottom: 24px;
+  color: #333;
 }
 
 .subscribe-form {
@@ -381,7 +110,8 @@ body {
 
 .subscribe-form button {
   padding: 12px 24px;
-  background: linear-gradient(90deg, #155C6B 0%, #4EE4C1 85%);
+  background: #1098ad;
+  /*background: linear-gradient(90deg, #155C6B 0%, #4EE4C1 85%);*/
   color: #FFF;
   border: none;
   border-radius: 8px;
@@ -393,7 +123,8 @@ body {
 }
 
 .subscribe-form button:hover {
-  background: linear-gradient(90deg, #0F484F 0%, #3CC0A6 85%);
+  background: #22b8cf;
+  /*background: linear-gradient(90deg, #0F484F 0%, #3CC0A6 85%);*/
 }
 
 .illustration {
@@ -415,6 +146,42 @@ footer {
   color: #9D9D9D;
   margin-top: 16px;
   font-family: "TT Hoves", sans-serif;
+}
+@media (min-width: 1920px) {
+  .container {
+    width: 90%; /* Увеличаване на ширината за големи екрани */
+    max-width: 1600px; /* Максимална ширина за центрирано съдържание */
+    height: auto;
+    padding: 90px; /* Увеличаване на вътрешните отстояния */
+    border-radius: 40px; /* По-големи заоблени ъгли */
+  }
+
+  .announcement h1 {
+    font-size: 80px; /* Увеличаване на размера на заглавията */
+    line-height: 100px;
+  }
+
+  .announcement h2 {
+    font-size: 28px; /* Увеличаване на подзаглавията */
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    font-size: 18px; /* По-голям текст във формуляра */
+  }
+
+  .logo {
+    width: 300px; /* Увеличаване на логото */
+  }
+
+  .social img {
+    width: 28px; /* По-големи икони за социални мрежи */
+    height: 28px;
+  }
+
+  footer {
+    font-size: 16px; /* По-голям текст във футъра */
+  }
 }
 
 /* --- Media Queries --- */
@@ -478,65 +245,109 @@ footer {
 
 /* За телефони (до 768px) */
 @media (max-width: 768px) {
-  .container {
+  body {
+    background: #FFF; /* Бял фон */
+    display: flex;
     flex-direction: column;
-    width: 95%;
+    align-items: center;
+    justify-content: flex-start;
     height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    width: 100%; /* Контейнерът заема цялата ширина */
+    height: auto; /* Автоматична височина */
     padding: 16px;
+    border-radius: 0; /* Премахваме заоблените ъгли */
+    box-shadow: none; /* Премахваме сянката */
+    background: #FFF; /* Убедяваме се, че контейнерът също има бял фон */
   }
 
   .header {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 16px;
+    gap: 12px; /* Разстояние между логото и социалните мрежи */
+    margin-bottom: 16px; /* Разстояние под хедъра */
   }
 
   .logo {
-    width: 180px;
-    margin-bottom: 16px;
+    width: 280px; /* Намалено лого */
+    margin-bottom: 10px;
   }
 
-  .social {
-    gap: 16px;
+  .social img {
+    width: 28px; /* Леко по-големи икони за лесна интеракция */
+    height: 28px;
+    cursor: pointer;
   }
 
   .content {
     flex-direction: column;
-    text-align: center;
+    align-items: center; /* Центриране на съдържанието */
+    text-align: center; /* Центриране на текста */
+    gap: 20px; /* Разстояние между елементите */
   }
 
   .announcement {
-    max-width: 100%;
-    margin-bottom: 24px;
+    max-width: 100%; /* Позволяваме на текста да заема цялата ширина */
+    margin-bottom: 20px; /* Разстояние под секцията */
   }
 
   .announcement h1 {
-    font-size: 36px;
-    line-height: 50px;
+    font-size: 28px; /* Намален размер на заглавието */
+    line-height: 40px;
+    color: #333; /* Леко по-мек цвят на текста */
   }
 
   .announcement h2 {
-    font-size: 18px;
+    font-size: 16px;
+    color: #666; /* По-мек цвят за подзаглавието */
   }
 
   .subscribe-form {
-    flex-direction: column;
-    gap: 8px;
+    flex-direction: column; /* Вертикално подреждане */
+    gap: 12px; /* Разстояние между полето и бутона */
+    width: 100%;
   }
 
   .subscribe-form input {
     width: 100%;
+    padding: 12px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    font-size: 14px;
   }
 
   .subscribe-form button {
     width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #1098ad;
+    /*background: linear-gradient(90deg, #4EE4C1 0%, #155C6B 100%);*/
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .subscribe-form button:hover {
+    background: #22b8cf;
+    /*background: linear-gradient(90deg, #0F484F 0%, #3CC0A6 100%);*/
   }
 
   .illustration {
-    max-width: 100%;
+    max-width: 80%;
+    margin: 0 auto; /* Центрираме илюстрацията */
   }
 
   footer {
     font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    color: #AAA; /* По-светъл текст */
   }
 }

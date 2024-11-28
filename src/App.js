@@ -126,9 +126,9 @@ import "./App.css";
 
 // Импортиране на изображения
 import logo from "./img/logo-long.png";
-import facebookIcon from "./img/facebook.png";
-import xIcon from "./img/x.png";
-import instagramIcon from "./img/instagram.png";
+import facebookIcon from "./img/logo-facebook.svg";
+import xIcon from "./img/logo-X.svg";
+import instagramIcon from "./img/logo-instagram.svg";
 import illustration from "./img/illustration.png";
 
 // Firebase configuration
@@ -206,18 +206,21 @@ const App = () => {
             <img className="logo" src={logo} alt="AnnotateX Logo" />
             <div className="social">
               <img
+                  className={"social-link"}
                   src={facebookIcon}
                   alt="Facebook"
                   onClick={() => handleSocialClick("facebook")}
                   style={{ cursor: "pointer" }}
               />
               <img
+                  className={"social-link"}
                   src={xIcon}
                   alt="X"
                   onClick={() => handleSocialClick("x")}
                   style={{ cursor: "pointer" }}
               />
               <img
+                  className={"social-link"}
                   src={instagramIcon}
                   alt="Instagram"
                   onClick={() => handleSocialClick("instagram")}

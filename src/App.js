@@ -186,10 +186,10 @@ const App = () => {
   const handleSocialClick = (platform) => {
     switch (platform) {
       case "facebook":
-        window.open("https://www.facebook.com", "_blank");
+        window.open("https://www.facebook.com/profile.php?id=61569924412156", "_blank");
         break;
       case "x":
-        window.open("https://twitter.com", "_blank");
+        window.open("https://x.com/annotatex", "_blank");
         break;
       case "instagram":
         window.open("https://www.instagram.com/annotatex/profilecard", "_blank");

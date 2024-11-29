@@ -3,39 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*.sizer {*/
-/*    width: 100%; !* Футърът заема цялата ширина *!*/
-/*    max-width: 1170px; !* Ограничаване на максималната ширина *!*/
-/*    text-align: center; !* Центриране на текста *!*/
-/*}*/
 body {
     background: linear-gradient(90deg, #155C6B 0%, #4EE4C1 85.17%);
     font-family: "TT Hoves", sans-serif; /* Основен шрифт */
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
     height: 100vh;
 }
 
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центриране на контейнера по ширина */
+    justify-content: flex-start; /* Запазва позицията на контейнера отгоре */
+    min-height: 100vh; /* Гарантира, че футърът ще остане най-отдолу */
+}
+
+
 .container-size {
+    flex: 1; /* Контейнерът заема оставащото място */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
 .container {
     width: 1170px;
     height: 685px;
-    flex-shrink: 0;
+    flex-shrink: 0; /* Гарантира, че контейнерът няма да се свие */
     border-radius: 36px;
     background: #F8F8F8;
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Основна настройка на flexbox за подредба вътре в контейнера */
+    flex-direction: column; /* Вертикално подреждане на децата */
     padding: 32px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px; /* Разстояние между контейнера и футъра */
 }
 
 .header {
@@ -152,16 +156,9 @@ body {
     object-fit: contain;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    color: #000;
-    border-top: 1px solid #CCC;
-    font-size: 1rem; /* Основен размер на шрифта */
-    padding: 10px; /* Вътрешно отстояние */ /* Фон на футъра */
-}
+
+
+
 @media (min-width: 2560px) {
   .container {
     width: 80%;

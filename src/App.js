@@ -233,7 +233,7 @@ const App = () => {
             <main className="content">
               <div className="announcement">
                 <h2>Coming soon</h2>
-                <h1>GET NOTIFIED WHEN WE WILL LAUNCH!</h1>
+                <h1>GET NOTIFIED WHEN WE LAUNCH!</h1>
                 <form className="subscribe-form" onSubmit={handleSubmit}>
                   <input
                       type="email"

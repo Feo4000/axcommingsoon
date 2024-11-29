@@ -200,56 +200,64 @@ const App = () => {
   };
 
   return (
-      <div className="container-size">
-        <div className="container">
-          <header className="header">
-            <img className="logo" src={logo} alt="AnnotateX Logo" />
-            <div className="social">
-              <img
-                  className={"social-link"}
-                  src={facebookIcon}
-                  alt="Facebook"
-                  onClick={() => handleSocialClick("facebook")}
-                  style={{ cursor: "pointer" }}
-              />
-              <img
-                  className={"social-link"}
-                  src={xIcon}
-                  alt="X"
-                  onClick={() => handleSocialClick("x")}
-                  style={{ cursor: "pointer" }}
-              />
-              <img
-                  className={"social-link"}
-                  src={instagramIcon}
-                  alt="Instagram"
-                  onClick={() => handleSocialClick("instagram")}
-                  style={{ cursor: "pointer" }}
-              />
-            </div>
-          </header>
-          <main className="content">
-            <div className="announcement">
-              <h2>Coming soon</h2>
-              <h1>GET NOTIFIED WHEN WE WILL LAUNCH!</h1>
-              <form className="subscribe-form" onSubmit={handleSubmit}>
-                <input
-                    type="email"
-                    id="emailInput"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
+      <div className="sizer">
+        <div className="container-size">
+
+          <div className="container">
+            <header className="header">
+              <img className="logo" src={logo} alt="AnnotateX Logo"/>
+              <div className="social">
+                <img
+                    className={"social-link"}
+                    src={facebookIcon}
+                    alt="Facebook"
+                    onClick={() => handleSocialClick("facebook")}
+                    style={{cursor: "pointer"}}
                 />
-                <button type="submit">Subscribe</button>
-              </form>
-              {message && <p className="message">{message}</p>}
-            </div>
-            <div className="illustration">
-              <img src={illustration} alt="Coming soon illustration" />
-            </div>
-          </main>
+                <img
+                    className={"social-link"}
+                    src={xIcon}
+                    alt="X"
+                    onClick={() => handleSocialClick("x")}
+                    style={{cursor: "pointer"}}
+                />
+                <img
+                    className={"social-link"}
+                    src={instagramIcon}
+                    alt="Instagram"
+                    onClick={() => handleSocialClick("instagram")}
+                    style={{cursor: "pointer"}}
+                />
+              </div>
+            </header>
+            <main className="content">
+              <div className="announcement">
+                <h2>Coming soon</h2>
+                <h1>GET NOTIFIED WHEN WE WILL LAUNCH!</h1>
+                <form className="subscribe-form" onSubmit={handleSubmit}>
+                  <input
+                      type="email"
+                      id="emailInput"
+                      placeholder="Enter your email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                  />
+                  <button type="submit">Subscribe</button>
+                </form>
+                {message && <p className="message">{message}</p>}
+              </div>
+              <div className="illustration">
+                <img src={illustration} alt="Coming soon illustration"/>
+              </div>
+            </main>
+
+          </div>
+
         </div>
+        {/*<footer className="footer">*/}
+        {/*  <p>&copy; 2024 AnnotateX. All rights reserved.</p>*/}
+        {/*</footer>*/}
       </div>
   );
 };

@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*.sizer {*/
+/*    width: 100%; !* Футърът заема цялата ширина *!*/
+/*    max-width: 1170px; !* Ограничаване на максималната ширина *!*/
+/*    text-align: center; !* Центриране на текста *!*/
+/*}*/
 body {
     background: linear-gradient(90deg, #155C6B 0%, #4EE4C1 85.17%);
     font-family: "TT Hoves", sans-serif; /* Основен шрифт */
@@ -148,12 +152,15 @@ body {
     object-fit: contain;
 }
 
-footer {
-    text-align: center;
-    font-size: 14px;
-    color: #9D9D9D;
-    margin-top: 16px;
-    font-family: "TT Hoves", sans-serif;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #000;
+    border-top: 1px solid #CCC;
+    font-size: 1rem; /* Основен размер на шрифта */
+    padding: 10px; /* Вътрешно отстояние */ /* Фон на футъра */
 }
 @media (min-width: 2560px) {
   .container {

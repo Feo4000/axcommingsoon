@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background: linear-gradient(90deg, #155C6B 0%, #4EE4C1 85.17%);
+    background: linear-gradient(90deg, #F68080 0%, #F9B16E 85.17%);
     font-family: "TT Hoves", sans-serif; /* Основен шрифт */
     margin: 0;
     /*display: flex;*/
@@ -108,6 +108,7 @@ body {
     line-height: 85px; /* Балансира височината на редовете */
     margin-bottom: 24px;
     color: #333;
+    font-family: "Times New Roman", sans-serif;
 }
 
 .subscribe-form {
@@ -126,7 +127,7 @@ body {
 
 .subscribe-form button {
     padding: 12px 24px;
-    background: #1098ad;
+    background: #f08382;
     /*background: linear-gradient(90deg, #155C6B 0%, #4EE4C1 85%);*/
     color: #FFF;
     border: none;
@@ -139,7 +140,7 @@ body {
 }
 
 .subscribe-form button:hover {
-    background: #22b8cf;
+    background: #f5b174;
     /*background: linear-gradient(90deg, #0F484F 0%, #3CC0A6 85%);*/
 }
 
@@ -147,7 +148,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
+    max-width: 35%;
 }
 
 .illustration img {
@@ -170,6 +171,7 @@ body {
   .announcement h1 {
     font-size: 96px; /* Увеличаваме размера на заглавието */
     line-height: 110px;
+
   }
 
   .announcement h2 {

@@ -20,13 +20,13 @@
 
 .terms-header h1 {
     font-size: 36px;
-    color: #155C6B;
+    color: #F68080;
 }
 
 .terms-content h2 {
     font-size: 24px;
     margin-top: 20px;
-    color: #155C6B;
+    color: #F68080;
 }
 
 .terms-content ul {
@@ -35,7 +35,7 @@
 }
 
 .terms-content a {
-    color: #4EE4C1;
+    color: #F9B16E;
     text-decoration: none;
 }
 

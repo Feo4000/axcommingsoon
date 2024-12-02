@@ -416,7 +416,7 @@ body {
         font-size: 16px;
         font-weight: bold;
         color: white;
-        background: #1098ad;
+        background: #f08382;
         /*background: linear-gradient(90deg, #4EE4C1 0%, #155C6B 100%);*/
         border: none;
         border-radius: 8px;
@@ -425,7 +425,7 @@ body {
     }
 
     .subscribe-form button:hover {
-        background: #22b8cf;
+        background: #f5b174;
         /*background: linear-gradient(90deg, #0F484F 0%, #3CC0A6 100%);*/
     }
 

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background: linear-gradient(90deg, #F68080 0%, #F9B16E 85.17%);
     font-family: "TT Hoves", sans-serif; /* Основен шрифт */
@@ -159,44 +160,39 @@ body {
 }
 
 
-
-
 @media (min-width: 2560px) {
-  .container {
-    width: 80%;
-    max-width: 1800px; /* Ограничаваме максималната ширина */
-    padding: 120px;
-    border-radius: 50px;
-  }
+    .container {
+        width: 80%;
+        max-width: 1800px; /* Ограничаваме максималната ширина */
+        padding: 120px;
+        border-radius: 50px;
+    }
 
-  .announcement h1 {
-    font-size: 96px; /* Увеличаваме размера на заглавието */
-    line-height: 110px;
+    .announcement h1 {
+        font-size: 96px; /* Увеличаваме размера на заглавието */
+        line-height: 110px;
 
-  }
+    }
 
-  .announcement h2 {
-    font-size: 32px; /* Увеличаваме подзаглавието */
-  }
+    .announcement h2 {
+        font-size: 32px; /* Увеличаваме подзаглавието */
+    }
 
-  .subscribe-form input,
-  .subscribe-form button {
-    font-size: 20px; /* По-голям текст във формуляра */
-    padding: 16px;
-  }
+    .subscribe-form input,
+    .subscribe-form button {
+        font-size: 20px; /* По-голям текст във формуляра */
+        padding: 16px;
+    }
 
-  .logo {
-    width: 350px; /* По-голямо лого */
-  }
+    .logo {
+        width: 350px; /* По-голямо лого */
+    }
 
-  .social img {
-    width: 32px;
-    height: 32px;
-  }
+    .social img {
+        width: 32px;
+        height: 32px;
+    }
 
-  footer {
-    font-size: 18px;
-  }
 }
 
 @media (min-width: 1920px) {
@@ -231,11 +227,7 @@ body {
         height: 28px;
     }
 
-    footer {
-        font-size: 16px; /* По-голям текст във футъра */
-    }
 }
-
 
 
 /* --- Media Queries --- */
@@ -272,173 +264,169 @@ body {
         height: 20px;
     }
 }
+
+
 @media (max-width: 1366px) {
-  .container {
-    width: 80%;
-    padding: 40px;
-  }
-
-  .announcement h1 {
-    font-size: 60px;
-    line-height: 75px;
-  }
-
-  .announcement h2 {
-    font-size: 20px;
-  }
-
-  .subscribe-form input,
-  .subscribe-form button {
-    font-size: 14px;
-  }
-
-  .logo {
-    width: 250px;
-  }
-
-  .social img {
-    width: 24px;
-    height: 24px;
-  }
-
-  footer {
-    font-size: 14px;
-  }
-}
-
-
-/* За таблети (768px - 1024px) */
-@media (max-width: 1024px) {
     .container {
-        width: 90%;
+        width: 80%;
         height: auto;
-        padding: 24px;
+        padding: 2.5rem 2.5rem;
+        margin-top: 1rem;
     }
 
     .announcement h1 {
-        font-size: 48px;
-        line-height: 65px;
+        font-size: 3.75rem;
+        line-height: 4.6875rem;
     }
 
     .announcement h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .subscribe-form input,
     .subscribe-form button {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .logo {
-        width: 200px;
-    }
-}
-
-/* За телефони (до 768px) */
-@media (max-width: 768px) {
-    body {
-        background: #FFF; /* Бял фон */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        height: auto;
-        padding: 0;
-        margin: 0;
-    }
-
-    .container {
-        width: 100%; /* Контейнерът заема цялата ширина */
-        height: auto; /* Автоматична височина */
-        padding: 16px;
-        border-radius: 0; /* Премахваме заоблените ъгли */
-        box-shadow: none; /* Премахваме сянката */
-        background: #FFF; /* Убедяваме се, че контейнерът също има бял фон */
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px; /* Разстояние между логото и социалните мрежи */
-        margin-bottom: 16px; /* Разстояние под хедъра */
-    }
-
-    .logo {
-        width: 280px; /* Намалено лого */
-        margin-bottom: 10px;
+        width: 15.625rem;
     }
 
     .social img {
-        width: 28px; /* Леко по-големи икони за лесна интеракция */
-        height: 28px;
-        cursor: pointer;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center; /* Центриране на съдържанието */
-        text-align: center; /* Центриране на текста */
-        gap: 20px; /* Разстояние между елементите */
-    }
-
-    .announcement {
-        max-width: 100%; /* Позволяваме на текста да заема цялата ширина */
-        margin-bottom: 20px; /* Разстояние под секцията */
-    }
-
-    .announcement h1 {
-        font-size: 28px; /* Намален размер на заглавието */
-        line-height: 40px;
-        color: #333; /* Леко по-мек цвят на текста */
-    }
-
-    .announcement h2 {
-        font-size: 16px;
-        color: #666; /* По-мек цвят за подзаглавието */
-    }
-
-    .subscribe-form {
-        flex-direction: column; /* Вертикално подреждане */
-        gap: 12px; /* Разстояние между полето и бутона */
-        width: 100%;
-    }
-
-    .subscribe-form input {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #DDD;
-        border-radius: 8px;
-        font-size: 14px;
-    }
-
-    .subscribe-form button {
-        width: 100%;
-        padding: 14px;
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
-        background: #f08382;
-        /*background: linear-gradient(90deg, #4EE4C1 0%, #155C6B 100%);*/
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-    }
-
-    .subscribe-form button:hover {
-        background: #f5b174;
-        /*background: linear-gradient(90deg, #0F484F 0%, #3CC0A6 100%);*/
-    }
-
-    .illustration {
-        max-width: 80%;
-        margin: 0 auto; /* Центрираме илюстрацията */
-    }
-
-    footer {
-        font-size: 12px;
-        text-align: center;
-        margin-top: 20px;
-        color: #AAA; /* По-светъл текст */
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
+
+
+
+
+    /* За таблети (768px - 1024px) */
+    @media (max-width: 1024px) {
+        .container {
+            width: 90%;
+            height: auto;
+            padding: 24px;
+        }
+
+        .announcement h1 {
+            font-size: 48px;
+            line-height: 65px;
+        }
+
+        .announcement h2 {
+            font-size: 20px;
+        }
+
+        .subscribe-form input,
+        .subscribe-form button {
+            font-size: 14px;
+        }
+
+        .logo {
+            width: 200px;
+        }
+    }
+
+    /* За телефони (до 768px) */
+    @media (max-width: 768px) {
+        body {
+            background: #FFF; /* Бял фон */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: auto;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%; /* Контейнерът заема цялата ширина */
+            height: auto; /* Автоматична височина */
+            padding: 16px;
+            border-radius: 0; /* Премахваме заоблените ъгли */
+            box-shadow: none; /* Премахваме сянката */
+            background: #FFF; /* Убедяваме се, че контейнерът също има бял фон */
+        }
+
+        .header {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px; /* Разстояние между логото и социалните мрежи */
+            margin-bottom: 16px; /* Разстояние под хедъра */
+        }
+
+        .logo {
+            width: 280px; /* Намалено лого */
+            margin-bottom: 10px;
+        }
+
+        .social img {
+            width: 28px; /* Леко по-големи икони за лесна интеракция */
+            height: 28px;
+            cursor: pointer;
+        }
+
+        .content {
+            flex-direction: column;
+            align-items: center; /* Центриране на съдържанието */
+            text-align: center; /* Центриране на текста */
+            gap: 20px; /* Разстояние между елементите */
+        }
+
+        .announcement {
+            max-width: 100%; /* Позволяваме на текста да заема цялата ширина */
+            margin-bottom: 20px; /* Разстояние под секцията */
+        }
+
+        .announcement h1 {
+            font-size: 28px; /* Намален размер на заглавието */
+            line-height: 40px;
+            color: #333; /* Леко по-мек цвят на текста */
+        }
+
+        .announcement h2 {
+            font-size: 16px;
+            color: #666; /* По-мек цвят за подзаглавието */
+        }
+
+        .subscribe-form {
+            flex-direction: column; /* Вертикално подреждане */
+            gap: 12px; /* Разстояние между полето и бутона */
+            width: 100%;
+        }
+
+        .subscribe-form input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #DDD;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .subscribe-form button {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: #f08382;
+            /*background: linear-gradient(90deg, #4EE4C1 0%, #155C6B 100%);*/
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .subscribe-form button:hover {
+            background: #f5b174;
+            /*background: linear-gradient(90deg, #0F484F 0%, #3CC0A6 100%);*/
+        }
+
+        .illustration {
+            max-width: 80%;
+            margin: 0 auto; /* Центрираме илюстрацията */
+        }
+
+    }

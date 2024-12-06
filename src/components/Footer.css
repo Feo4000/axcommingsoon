@@ -1,3 +1,4 @@
+/* Основни стилове за футъра */
 .footer {
     width: 100%;
     text-align: center;
@@ -31,9 +32,9 @@
     color: #f5b174;
 }
 
+/* Медиa заявки за различни устройства */
 
-
-/* За големи екрани */
+/* За много големи екрани (2560px и нагоре) */
 @media (min-width: 2560px) {
     .footer {
         font-size: 1.5rem; /* Увеличаваме текста */
@@ -41,7 +42,7 @@
     }
 }
 
-/* За стандартни лаптопи и настолни компютри */
+/* За стандартни лаптопи и настолни компютри (1920px и по-малки) */
 @media (max-width: 1920px) {
     .footer {
         font-size: 1.25rem; /* Среден размер на текста */
@@ -49,19 +50,86 @@
     }
 }
 
-/* За таблети */
+@media (max-width: 1366px) {
+    footer {
+        width: 70%;
+        padding: 2rem 2rem;
+        margin-top: 1.5rem;
+        background-color: #f8f9fa;
+        text-align: center;
+
+        footer .footer-container {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        footer .footer-logo {
+            width: 12rem;
+            margin-bottom: 1rem;
+        }
+
+        footer .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 0.875rem;
+        }
+
+        footer .footer-links a {
+            text-decoration: none;
+            color: #6c757d;
+            transition: color 0.3s;
+        }
+
+        footer .footer-links a:hover {
+            color: #007bff;
+        }
+
+        footer .footer-social {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        footer .footer-social img {
+            width: 2rem;
+            height: 2rem;
+            transition: transform 0.3s;
+        }
+
+        footer .footer-social img:hover {
+            transform: scale(1.1);
+        }
+
+        footer .footer-copy {
+            margin-top: 1rem;
+            font-size: 0.75rem;
+            color: #6c757d;
+        }
+    }
+}
+/* За таблети (1024px и по-малки) */
 @media (max-width: 1024px) {
     .footer {
         font-size: 0.875rem; /* По-малък размер на текста */
         padding: 12px; /* Намалено пространство */
     }
+
+    .footer-container {
+        gap: 10px; /* Леко намалено разстояние */
+    }
+
+    .footer-link {
+        font-size: 13px; /* Малко намаление на текста за линковете */
+    }
 }
 
-/* За телефони */
-/* Responsive styling */
+/* За телефони (768px и по-малки) */
 @media (max-width: 768px) {
     .footer-container {
-        gap: 12px;
+        gap: 12px; /* Увеличено разстояние за по-добра четимост */
     }
 
     .footer-link {
@@ -69,12 +137,20 @@
     }
 }
 
-/* За много малки устройства (до 480px ширина) */
+/* За много малки устройства (480px и по-малки) */
 @media (max-width: 480px) {
     .footer {
         font-size: 0.625rem; /* Минимален размер на текста */
         padding: 8px; /* Още по-малък падинг */
-        line-height: 1.4; /* Добавяме повече пространство между редовете */
+        line-height: 1.4; /* Повече пространство между редовете */
         color: #888; /* Още по-мек цвят за минималистичен вид */
+    }
+
+    .footer-container {
+        gap: 6px; /* Намалено разстояние между текстовете */
+    }
+
+    .footer-link {
+        font-size: 11px; /* Още по-малък размер на текста за линковете */
     }
 }
